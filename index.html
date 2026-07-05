@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial, Helvetica, sans-serif;
+
+            background-image:url("fondo.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
+            height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .contenedor{
+            background:rgba(255,255,255,0.85);
+            width:650px;
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 0 15px rgba(0,0,0,.4);
+        }
+
+        h1{
+            color:#0b5394;
+        }
+
+        p{
+            font-size:18px;
+            color:#333;
+            line-height:1.6;
+        }
+
+        button{
+            background:#0b5394;
+            color:white;
+            border:none;
+            padding:15px 30px;
+            font-size:18px;
+            border-radius:8px;
+            cursor:pointer;
+            margin-top:20px;
+        }
+
+        button:hover{
+            background:#073763;
+        }
+
+        footer{
+            margin-top:30px;
+            font-size:15px;
+            color:#555;
+            font-weight:bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Bienvenido a Mi Primera Página Web</h1>
+
+    <p>
+        Esta página fue desarrollada utilizando <strong>HTML</strong>. Su propósito es mostrar la estructura básica de una página web.
+    </p>
+
+    <button onclick="mensaje()">
+        Haz clic aquí
+    </button>
+
+    <footer>
+        Creada por <strong>Heberto Orueta</strong><br>
+        Universidad CNCI
+    </footer>
+
+</div>
+
+<script>
+function mensaje(){
+    alert("¡Hola! Gracias por visitar mi página web.");
+}
+</script>
+
+</body>
+
+</html>
